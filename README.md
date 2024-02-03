@@ -35,6 +35,7 @@
 - Atom Feeds
 - Google Analytics
 - Page Views Reporting
+- GoatCounter
 - SEO & Performance Optimization
 
 ## Quick Start
