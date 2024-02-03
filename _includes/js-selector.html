@@ -96,4 +96,8 @@
     {% include google-analytics.html %}
   {% endif %}
 
+  <!-- GoatCounter -->
+  {% if site.goatcounter.id != empty and site.goatcounter.id %}
+    {% include goatcounter.html %}
+  {% endif %}
 {% endif %}
