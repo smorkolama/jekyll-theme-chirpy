@@ -121,7 +121,7 @@
       {% assign _left = _left | replace: 'src=', 'data-src=' | replace: ' lqip=', ' data-lqip="true" src=' %}
 
     {% else %}
-      {% assign _class = _class | append: ' shimmer' %}
+      {% assign _class = _class %}
     {% endif %}
 
     <!-- lazy-load images -->
@@ -144,7 +144,7 @@
         <!-- add class to exist <a> tag -->
         {% assign _size = _img_content | size | minus: 1 %}
         {% capture _class %}
-          class="img-link{% unless _lqip %} shimmer{% endunless %}"
+          class="img-link"
         {% endcapture %}
         {% assign _img_content = _img_content | slice: 0, _size | append: _class | append: '>' %}
 
